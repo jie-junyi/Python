@@ -1,6 +1,9 @@
 import pygame.font
+<<<<<<< HEAD
 from pygame.sprite import Group
 from ship import Ship
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
 
 
 class Scoreboard:
@@ -8,8 +11,11 @@ class Scoreboard:
 
     def __init__(self, ai_game):
         """初始化显示得分涉及的属性"""
+<<<<<<< HEAD
         # !!!!
         self.ai_game = ai_game
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
         self.screen = ai_game.screen
         self.screen_rect = self.screen.get_rect()
         self.settings = ai_game.settings
@@ -21,8 +27,11 @@ class Scoreboard:
         # 准备初始得分图像。
         self.prep_score()
         self.prep_high_score()
+<<<<<<< HEAD
         self.prep_level()
         self.prep_ships()
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
 
     def prep_score(self):
         """将得分转换为一幅渲染的图像。"""
@@ -49,6 +58,7 @@ class Scoreboard:
         self.high_score_rect.centerx = self.screen_rect.centerx
         self.high_score_rect.top = self.score_rect.top
 
+<<<<<<< HEAD
     def prep_level(self):
         """将等级转换为渲染的图像。"""
         level_str = str(self.stats.level)
@@ -70,13 +80,18 @@ class Scoreboard:
             ship.rect.y = 10
             self.ships.add(ship)
 
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
     def show_score(self):
         """在屏幕上显示得分。"""
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.high_score_image, self.high_score_rect)
+<<<<<<< HEAD
         # 显示等级
         self.screen.blit(self.level_image, self.level_rect)
         self.ships.draw(self.screen)
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
 
     def check_high_score(self):
         """检查是否诞生了新的最高得分。"""

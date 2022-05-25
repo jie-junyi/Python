@@ -8,6 +8,10 @@ from game_stats import GameStats
 from time import sleep
 from button import Button
 from scoreboard import Scoreboard
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
 
 
 class AlienInvasion:
@@ -90,8 +94,11 @@ class AlienInvasion:
             # 重置游戏统计信息
             self.stats.reset_stats()
             self.sb.prep_score()
+<<<<<<< HEAD
             self.sb.prep_level()
             self.sb.prep_ships()
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
             # 重置游戏设置。
             self.settings.initialize_dynamic_settings()
             self.stats.game_active = True
@@ -182,10 +189,13 @@ class AlienInvasion:
             self.bullets.empty()
             self._create_fleet()
             self.settings.increase_speed()
+<<<<<<< HEAD
 
             # 提高等级。
             self.stats.level += 1
             self.sb.prep_level()
+=======
+>>>>>>> 1159c4642f131974629ee1be4cd97adb6f210e4d
 
     def _ship_hit(self):
         """响应飞船被外星人撞到"""
