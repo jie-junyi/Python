@@ -10,7 +10,6 @@ from button import Button
 from scoreboard import Scoreboard
 
 
-
 class AlienInvasion:
     """管理游戏资源和行为的类"""
 

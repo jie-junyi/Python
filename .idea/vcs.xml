@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Simulator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pygame-button-interface-switch" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pygame-marie-adventure" vcs="Git" />
   </component>
 </project>
